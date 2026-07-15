@@ -1,14 +1,14 @@
-# FPGA-Based Lightweight Authentication using LFSR-Assisted Arbiter PUF
+# FPGA-Based Lightweight Authentication using a 4-bit LFSR-Assisted Arbiter PUF
 
 ## Overview
 
-This repository presents the FPGA implementation of a lightweight authentication system based on a **4-bit LFSR-Assisted Arbiter Physical Unclonable Function (LFSR-APUF)**.
+This repository presents the design, FPGA implementation, and security evaluation of a lightweight authentication system based on a **4-bit LFSR-Assisted Arbiter Physical Unclonable Function (LFSR-APUF)**.
 
-The project implements a hardware authentication architecture inspired by the paper:
+The architecture is inspired by the IEEE paper:
 
 > *A Lightweight Authentication Protocol against Modeling Attacks based on a Novel LFSR-APUF*
 
-The complete system was implemented using **Verilog HDL**, synthesized on a **Xilinx Spartan-7 XC7S50 FPGA** using **Vivado 2025.1**, and evaluated using a Python-based authentication and security framework.
+The complete system was implemented using **Verilog HDL**, synthesized on a **Xilinx Spartan-7 XC7S50 FPGA** using **Vivado 2025.1**, and evaluated through a Python-based framework supporting authentication, randomness analysis, and machine learning attack evaluation.
 
 ---
 
@@ -24,6 +24,26 @@ The complete system was implemented using **Verilog HDL**, synthesized on a **Xi
 - Statistical randomness evaluation
 - Machine learning attack evaluation
 - FPGA timing, power, and resource analysis
+
+---
+
+## Project Workflow
+
+Challenge
+↓
+4-bit LFSR
+↓
+Challenge Obfuscation
+↓
+Arbiter PUF
+↓
+Response Generation
+↓
+Challenge-Response Pair Database
+↓
+Mutual Authentication
+↓
+Security Evaluation
 
 ---
 
@@ -52,13 +72,17 @@ README.md
 
 ## Architecture
 
-![Architecture](Images/lfsr_apuf_architecture.png)
+![Architecture](Images/Mini_LFSR_APUF.png)
+
+## RTL Architecture
+
+![RTL](Images/RTL_Schematic.png)
 
 ---
 
 ## Authentication Flow
 
-![Authentication](Images/authentication_workflow.png)
+![Authentication](Images/Authentication_System.png)
 
 ---
 
@@ -106,7 +130,7 @@ Comparison plots are available in:
 
 ```
 
-Results/Modeling\_Attack/
+Results\Modeling_Attack\Modeling_attack_Results
 
 ```
 
@@ -124,7 +148,7 @@ Results are available in
 
 ```
 
-Results/Randomness/
+Results\Randomness\Randomness_Results
 
 ```
 
@@ -156,7 +180,9 @@ python protocol_demo.py
 
 ## Reference
 
-A Lightweight Authentication Protocol against Modeling Attacks based on a Novel LFSR-APUF.
+A Lightweight Authentication Protocol against
+Modeling Attacks based on a Novel LFSR-APUF
+Yao Wang, Member, IEEE, Xue Mei, Zhengtai Chang, Wenbing Fan, Benqing Guo, and Zhi Quan
 
 ---
 
