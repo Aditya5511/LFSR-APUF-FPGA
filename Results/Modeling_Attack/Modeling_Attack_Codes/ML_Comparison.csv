@@ -1,0 +1,4 @@
+Model,Challenge Only (%),Challenge + LFSR (%)
+Logistic Regression,54.949999999999996,53.75
+Support Vector Machine,53.75,60.45
+Random Forest,53.6,57.49999999999999

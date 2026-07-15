@@ -1,0 +1,6 @@
+CRP ANALYSIS
+
+Total CRPs : 10000
+Response 0 : 5336
+Response 1 : 4664
+Uniformity : 46.64%

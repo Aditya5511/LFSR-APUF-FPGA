@@ -1,0 +1,79 @@
+======================================================================
+        LFSR-APUF LIGHTWEIGHT AUTHENTICATION PROTOCOL
+======================================================================
+
+REGISTRATION PHASE
+----------------------------------------------------------------------
+Registered Device ID : Device_01
+Challenge Length     : 8 bits
+Challenge Space      : 256
+Unique CRPs Stored   : 248
+
+SESSION PARAMETERS
+----------------------------------------------------------------------
+Session ID           : 3898
+Ks1                  : 1111011001111001
+Ks2                  : 0001101010011000
+
+
+======================================================================
+LEGITIMATE DEVICE AUTHENTICATION
+======================================================================
+
+Device ID            : Device_01
+Server Challenge     : 11001010
+Obfuscated Challenge : 11001010
+PUF Response         : 0
+Authentication Token : 4c7ea1965c19edc7...
+
+Server Verification  : SUCCESS
+
+
+======================================================================
+MUTUAL AUTHENTICATION
+======================================================================
+
+Server Token         : 4c1d1a00d42d7eb2...
+Device Verification  : SUCCESS
+
+
+======================================================================
+FAKE DEVICE ATTACK
+======================================================================
+
+Fake Device ID       : Fake_Device
+Challenge            : 10101001
+Fake Response        : 1
+
+Authentication       : FAILED
+Reason               : Fake Device Detected
+
+
+======================================================================
+REPLAY ATTACK
+======================================================================
+
+Attacker replays an old valid Challenge-Response pair
+
+Captured Challenge   : 11001010
+Captured Response    : 0
+Fresh Challenge      : 00110010
+
+Replay Attack Detected
+Authentication       : FAILED
+
+
+======================================================================
+AUTHENTICATION PROTOCOL SUMMARY
+======================================================================
+✓ Registration Completed
+✓ Legitimate Device Authenticated
+✓ Mutual Authentication Successful
+✓ Fake Device Rejected
+✓ Replay Attack Prevented
+✓ Session Established Successfully
+======================================================================
+END OF DEMONSTRATION
+======================================================================
+
+Results saved to Authentication_Output.txt

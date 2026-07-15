@@ -1,0 +1,22 @@
+==================================================
+ RANDOMNESS ANALYSIS
+==================================================
+Total Response Bits : 10000
+Zeros : 5336
+Ones  : 4664
+Bias : 0.0672
+
+Shannon Entropy : 0.99674 bits
+Min Entropy : 0.906169 bits
+
+Number of Runs : 4664
+Expected Runs : 4978.42
+Longest Run : 13
+
+Transition Probability : 0.466347
+Adjacent Bit Correlation : 0.533653
+
+Overall Assessment
+WARNING : Randomness can be improved
+
+Results saved to Randomness_Output.txt
