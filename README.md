@@ -182,7 +182,7 @@ python protocol_demo.py
 
 ## Reference
 
-A Lightweight Authentication Protocol against Modeling Attacks based on a Novel LFSR-APUF.
+Y. Wang, X. Mei, Z. Chang, W. Fan, B. Guo, and Z. Quan, "A Lightweight Authentication Protocol against Modeling Attacks Based on a Novel LFSR-APUF," IEEE INTERNET OF THINGS JOURNAL, VOL. 18, NO. 9, SEPTEMBER 2020 
 
 ---
 
