@@ -84,7 +84,7 @@ README.md
 
 ## RTL Architecture
 
-![RTL](Images/RTL_Schematic)
+![RTL](Images/RTL_Schematic.png)
 
 ---
 
