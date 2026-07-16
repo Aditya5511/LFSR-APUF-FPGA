@@ -6,7 +6,7 @@ This repository presents the design, FPGA implementation, and security evaluatio
 
 The architecture is inspired by the IEEE paper:
 
-> *A Lightweight Authentication Protocol against Modeling Attacks based on a Novel LFSR-APUF*
+> *Y. Wang, X. Mei, Z. Chang, W. Fan, B. Guo, and Z. Quan, "A Lightweight Authentication Protocol against Modeling Attacks Based on a Novel LFSR-APUF," IEEE INTERNET OF THINGS JOURNAL, VOL. 18, NO. 9, SEPTEMBER 2020*
 
 The complete system was implemented using **Verilog HDL**, synthesized on a **Xilinx Spartan-7 XC7S50 FPGA** using **Vivado 2025.1**, and evaluated through a Python-based framework supporting authentication, randomness analysis, and machine learning attack evaluation.
 ---
